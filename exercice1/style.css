@@ -44,4 +44,47 @@
     position: absolute;
     left: 500px;
     top: 25px;
+    animation-name : bar-animation;
+    animation-duration : 10s;
+    animation-fill-mode : forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bar-animation {
+    from {
+        background-color: coral;
+        font-size: 1rem;
+        font-weight: normal;
+        text-transform: capitalize;
+    }
+
+    to {
+        background-color: cornflowerblue;
+        font-size: 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    5% {
+        width: 265px;
+        height:265px;
+    }
+    25% {
+        background : orange;
+        width: 150px;
+        height: 150px;
+    }
+    75% {
+        width: 200px;
+        height: 200px;
+        left:5px
+    }
+    100% {
+        width:25px;
+        height : 25px;
+        background : purple;
+        top:50px;
+        left:65px
+    }
+
 }
